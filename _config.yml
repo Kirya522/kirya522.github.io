@@ -31,7 +31,7 @@ github_username:  kirya522
 theme: minima
 plugins:
   - jemoji
-
+google_analytics: UA-158616174-1
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
