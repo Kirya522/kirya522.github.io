@@ -4,15 +4,20 @@
 
 layout: home
 ---
+__More about me__
 
-# __Hi__ 
-## This is my personal page
+## Hi
+I am Kirill, developer, investor, bike rider.
+
+Java Software Engineer at [miro](miro.com)
 
 ### Contact me
-:e-mail:[e-mail](mailto:delovoy.kirillgrischuk@gmail.com)
+:e-mail:[E-mail](mailto:kirya522@gmail.com)
+
+:computer:[Github](https://github.com/Kirya522)
 
 :dart:[Medium](https://kirya522.medium.com/)
 
 :bell:[LinkedIn](https://www.linkedin.com/in/kirill-grischuk/)
 
-[Telegram](https://t.me/kirill_grischuk)
+:briefcase:[Telegram](https://t.me/kirill_grischuk)
