@@ -1,0 +1,22 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+Hi this is my personal blog.
+Contacts
+[Medium](https://kirya522.medium.com/)
+[LinkedIn](https://www.linkedin.com/in/kirill-grischuk/)
+[Telegram](https://t.me/kirill_grischuk)
+
+You can find the source code for Minima at GitHub:
+[jekyll][jekyll-organization] /
+[minima](https://github.com/jekyll/minima)
+
+You can find the source code for Jekyll at GitHub:
+[jekyll][jekyll-organization] /
+[jekyll](https://github.com/jekyll/jekyll)
+
+
+[jekyll-organization]: https://github.com/jekyll

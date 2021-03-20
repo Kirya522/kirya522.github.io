@@ -1,0 +1,11 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+Hi this is my personal blog.
+Contacts
+[Medium](https://kirya522.medium.com/)
+[LinkedIn](https://www.linkedin.com/in/kirill-grischuk/)
+[Telegram](https://t.me/kirill_grischuk)

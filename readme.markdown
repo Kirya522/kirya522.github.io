@@ -1,0 +1,18 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
+
+# __Hi__ 
+## This is my personal page
+
+### Contact me
+:e-mail:[e-mail](mailto:delovoy.kirillgrischuk@gmail.com)
+
+:dart:[Medium](https://kirya522.medium.com/)
+
+:bell:[LinkedIn](https://www.linkedin.com/in/kirill-grischuk/)
+
+:briefcase:[Telegram](https://t.me/kirill_grischuk)

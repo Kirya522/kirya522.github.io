@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Kirill Grischuk info page
+title: Personal page
 author: Kirill Grischuk
 email: kirya522@gmail.com
 description: Kirill Grischuk blog
@@ -30,7 +30,7 @@ github_username:  kirya522
 # Build settings
 theme: minima
 plugins:
-  - jemoji
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.

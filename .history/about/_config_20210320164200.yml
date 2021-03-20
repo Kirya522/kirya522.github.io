@@ -28,7 +28,7 @@ twitter_username: kirya522
 github_username:  kirya522
 
 # Build settings
-theme: minima
+#theme: minima
 plugins:
   - jemoji
 

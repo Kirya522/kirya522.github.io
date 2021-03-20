@@ -30,6 +30,7 @@ github_username:  kirya522
 # Build settings
 theme: minima
 plugins:
+  - jekyll-feed
   - jemoji
 
 # Exclude from processing.

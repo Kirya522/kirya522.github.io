@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Kirill Grischuk info page
+title: Personal page
 author: Kirill Grischuk
 email: kirya522@gmail.com
-description: Kirill Grischuk blog
+description: My personal page
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kirya522.tech" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kirya522
@@ -30,7 +30,7 @@ github_username:  kirya522
 # Build settings
 theme: minima
 plugins:
-  - jemoji
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
