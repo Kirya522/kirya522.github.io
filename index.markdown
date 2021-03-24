@@ -18,6 +18,8 @@ Java Software Engineer at [miro](miro.com)
 
 :dart:[Medium](https://kirya522.medium.com/)
 
+:paperclip:[Habr](https://habr.com/ru/users/kirya522/)
+
 :bell:[LinkedIn](https://www.linkedin.com/in/kirill-grischuk/)
 
 :briefcase:[Telegram](https://t.me/kirill_grischuk)
