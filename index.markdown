@@ -9,17 +9,17 @@ __More about me__
 ## Hi
 I am Kirill, developer, investor, bike rider.
 
-Java Software Engineer at [miro](miro.com)
+Backend  Java Software Engineer at [miro](miro.com)
 
 ### Contact me
-:e-mail:[E-mail](mailto:kirya522@gmail.com)
+:e-mail:[E-mail(Preferable)](mailto:kirya522@gmail.com)
 
-:computer:[Github](https://github.com/Kirya522)
+:computer:[My github profile](https://github.com/Kirya522)
 
 :dart:[Medium](https://kirya522.medium.com/)
 
-:paperclip:[Habr](https://habr.com/ru/users/kirya522/)
+:paperclip:[My habr profile](https://habr.com/ru/users/kirya522/)
 
-:bell:[LinkedIn](https://www.linkedin.com/in/kirill-grischuk/)
+:bell:[CV available in LinkedIn](https://www.linkedin.com/in/kirill-grischuk/)
 
-:briefcase:[Telegram](https://t.me/kirill_grischuk)
+:briefcase:[My telegram contact](https://t.me/kirill_grischuk)
