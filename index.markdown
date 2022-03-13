@@ -6,9 +6,9 @@ layout: home
 ---
 ## __A little about me__
 
-Hi! I am Kirill currently working as a Java developer at [miro](miro.com).
+Hi! I am Kirill currently working as a Java developer.
 
-My main areas are highload systems and technically hard projects. Over the last year, I've started a deep dive into DevOps, kubernetes and infrastructure as code approaches. My English level is B2 (Upper intermediate).
+My main areas are highload systems and technically hard projects. Over the last year, I've started a deep dive into DevOps, kubernetes and infrastructure as code approaches. My English level is C1 (Advanced).
 
 I share my ideas and projects on [github](https://github.com/Kirya522), [medium](https://kirya522.medium.com/) and [habr](https://habr.com/ru/users/kirya522/). You may find it suitable.
 
