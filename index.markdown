@@ -27,11 +27,11 @@ I share my ideas and projects on [github](https://github.com/Kirya522), [medium]
 | Source | Purpose |
 |-------|--------|
 | :e-mail: [E-mail(Preferable)](mailto:kirya522@gmail.com)  | If you want to ask work realted qustions or offer something  |
-| :briefcase: [telegram](https://t.me/kirill_grischuk) | If you want to ask about projects or give a feedback |
+| :briefcase: [telegram](https://t.me/kirill_grishchuk) | If you want to ask about projects or give a feedback |
 
 ## More links
 
-:bell: [LinkedIn CV](https://www.linkedin.com/in/kirill-grischuk/)
+:bell: [LinkedIn CV](https://www.linkedin.com/in/kirill-grishchuk/)
 
 :dart: [Medium](https://kirya522.medium.com/)
 
