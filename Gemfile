@@ -31,3 +31,4 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "nokogiri"
 gem "jekyll-analytics"
 gem "jekyll-titles-from-headings"
+gem "webrick", "~> 1.7"
