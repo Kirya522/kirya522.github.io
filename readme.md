@@ -1,8 +1,5 @@
-# How to build locally
+# Personal site page
 
-```shell
-bundle update
-bundle exec jekyll serve --livereload
-```
+Underhood source lives in different private repo.
 
-[docs](https://jekyllrb.com/docs/)
+Uses [action](https://github.com/peaceiris/actions-gh-pages) to deploy from it
