@@ -1,0 +1,22 @@
+---
+name: Deploy Hugo site via GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Set a branch to deploy
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
