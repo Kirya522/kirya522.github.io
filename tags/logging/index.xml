@@ -1,2 +1,17 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Logging - Tag - kirya522 dev blog</title><link>https://kirya522.tech/tags/logging/</link><description>Logging - Tag - kirya522 dev blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>kirya522@gmail.com (Kirill Grishchuk)</managingEditor><webMaster>kirya522@gmail.com (Kirill Grishchuk)</webMaster><lastBuildDate>Mon, 12 Dec 2022 15:00:00 +0400</lastBuildDate><atom:link href="https://kirya522.tech/tags/logging/" rel="self" type="application/rss+xml"/><item><title>Про логирование с примерами</title><link>https://kirya522.tech/posts/logging/</link><pubDate>Mon, 12 Dec 2022 15:00:00 +0400</pubDate><author>Kirill Grishchuk</author><guid>https://kirya522.tech/posts/logging/</guid><description> Note Весь исходный код доступен на github Видео с теорией Запись стрима с реальным приложением и примерами Содержание:
-Что такое лог, структура Виды логов Типичные примеры логов, стандартная конфигурация Уровни логирования Как работают фильтры уровней логирования Как используются логи, ошибки, отладка Логи об ошибках, про различие WARN и ERROR Логирование в реальных проектах, никто не смотрит в консоль Про чтение из стандартного вывода Реакция на ошибки, sentry Системы для работы с логами, ELK Про логирование в JSON, зачем Простой пример и практика Про приложение в кратце Статические логеры Как постятся логи Свалка логов, все в одном месте Тюним уровень логирования, эмулируем Sentry Еще тюним, только ERROR, важные логи на которые надо реагировать Снова свалка логов, все в одном месте В кратце про библиотеки логирования: Logger + Appender Простейщая интеграция с логерами Заключение, логи работают только когда все удобно настроено</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Logging - Tag - kirya522 dev blog</title>
+        <link>https://kirya522.tech/tags/logging/</link>
+        <description>Logging - Tag - kirya522 dev blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>kirya522@gmail.com (Kirill Grishchuk)</managingEditor>
+            <webMaster>kirya522@gmail.com (Kirill Grishchuk)</webMaster><lastBuildDate>Mon, 12 Dec 2022 15:00:00 &#43;0400</lastBuildDate><atom:link href="https://kirya522.tech/tags/logging/" rel="self" type="application/rss+xml" /><item>
+    <title>Про логирование с примерами</title>
+    <link>https://kirya522.tech/posts/logging/</link>
+    <pubDate>Mon, 12 Dec 2022 15:00:00 &#43;0400</pubDate>
+    <author>Kirill Grishchuk</author>
+    <guid>https://kirya522.tech/posts/logging/</guid>
+    <description><![CDATA[ Note Весь исходный код доступен на github Видео с теорией Запись стрима с реальным приложением и примерами Содержание:
+Что такое лог, структура Виды логов Типичные примеры логов, стандартная конфигурация Уровни логирования Как работают фильтры уровней логирования Как используются логи, ошибки, отладка Логи об ошибках, про различие WARN и ERROR Логирование в реальных проектах, никто не смотрит в консоль Про чтение из стандартного вывода Реакция на ошибки, sentry Системы для работы с логами, ELK Про логирование в JSON, зачем Простой пример и практика Про приложение в кратце Статические логеры Как постятся логи Свалка логов, все в одном месте Тюним уровень логирования, эмулируем Sentry Еще тюним, только ERROR, важные логи на которые надо реагировать Снова свалка логов, все в одном месте В кратце про библиотеки логирования: Logger + Appender Простейщая интеграция с логерами Заключение, логи работают только когда все удобно настроено ]]></description>
+</item>
+</channel>
+</rss>

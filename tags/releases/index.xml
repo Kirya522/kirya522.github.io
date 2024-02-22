@@ -1,2 +1,17 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Releases - Tag - kirya522 dev blog</title><link>https://kirya522.tech/tags/releases/</link><description>Releases - Tag - kirya522 dev blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>kirya522@gmail.com (Kirill Grishchuk)</managingEditor><webMaster>kirya522@gmail.com (Kirill Grishchuk)</webMaster><lastBuildDate>Thu, 21 Sep 2023 13:00:00 +0400</lastBuildDate><atom:link href="https://kirya522.tech/tags/releases/" rel="self" type="application/rss+xml"/><item><title>Способ тестирования изменений сервиса через shadow-трафик</title><link>https://kirya522.tech/posts/critical-changes-in-highload-service/</link><pubDate>Thu, 21 Sep 2023 13:00:00 +0400</pubDate><author>Kirill Grishchuk</author><guid>https://kirya522.tech/posts/critical-changes-in-highload-service/</guid><description>Note Иногда канареечных релизов недостаточно для обеспечения полностью безопасного релиза. Проблема Пример из реальной жизни - я работаю над одним из высоко нагруженных компонентов системы, который обрабатывает 1,5-2 млн запросов в минуту (33 k RPS).
-Наш сервис уже стал сложным для внесения изменений, а внутренний механизм устарел и не соответствует новым требованиям бизнеса. Он также уже почти не может быть ускорен и имеет технические проблемы. Мы спланировали и разработали новый механизм работы и обработки данных (изменено около 40% кодовой базы), который нужно интегрировать и перенаправить на него трафик.</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Releases - Tag - kirya522 dev blog</title>
+        <link>https://kirya522.tech/tags/releases/</link>
+        <description>Releases - Tag - kirya522 dev blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>kirya522@gmail.com (Kirill Grishchuk)</managingEditor>
+            <webMaster>kirya522@gmail.com (Kirill Grishchuk)</webMaster><lastBuildDate>Thu, 21 Sep 2023 13:00:00 &#43;0400</lastBuildDate><atom:link href="https://kirya522.tech/tags/releases/" rel="self" type="application/rss+xml" /><item>
+    <title>Способ тестирования изменений сервиса через shadow-трафик</title>
+    <link>https://kirya522.tech/posts/critical-changes-in-highload-service/</link>
+    <pubDate>Thu, 21 Sep 2023 13:00:00 &#43;0400</pubDate>
+    <author>Kirill Grishchuk</author>
+    <guid>https://kirya522.tech/posts/critical-changes-in-highload-service/</guid>
+    <description><![CDATA[Note Иногда канареечных релизов недостаточно для обеспечения полностью безопасного релиза. Проблема Пример из реальной жизни - я работаю над одним из высоко нагруженных компонентов системы, который обрабатывает 1,5-2 млн запросов в минуту (33 k RPS).
+Наш сервис уже стал сложным для внесения изменений, а внутренний механизм устарел и не соответствует новым требованиям бизнеса. Он также уже почти не может быть ускорен и имеет технические проблемы. Мы спланировали и разработали новый механизм работы и обработки данных (изменено около 40% кодовой базы), который нужно интегрировать и перенаправить на него трафик.]]></description>
+</item>
+</channel>
+</rss>
