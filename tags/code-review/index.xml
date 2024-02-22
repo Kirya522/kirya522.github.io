@@ -1,16 +1,1 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Code-Review - Tag - kirya522 dev blog</title>
-        <link>https://kirya522.tech/tags/code-review/</link>
-        <description>Code-Review - Tag - kirya522 dev blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>kirya522@gmail.com (Kirill Grishchuk)</managingEditor>
-            <webMaster>kirya522@gmail.com (Kirill Grishchuk)</webMaster><lastBuildDate>Wed, 28 Sep 2022 11:01:21 &#43;0400</lastBuildDate><atom:link href="https://kirya522.tech/tags/code-review/" rel="self" type="application/rss+xml" /><item>
-    <title>Как проводить code review. 5 советов</title>
-    <link>https://kirya522.tech/posts/code-review/</link>
-    <pubDate>Wed, 28 Sep 2022 11:01:21 &#43;0400</pubDate>
-    <author>Kirill Grishchuk</author>
-    <guid>https://kirya522.tech/posts/code-review/</guid>
-    <description><![CDATA[Видео на канале Темы из видео Какие проблемы возникают без ревью Ревью помогает командам разрабатывать быстрее Смена парадигмы понимания Предвидеть потенциальные проблемы Код ревью на практике Зачем код ревью разработчику 5 универсальных советов Совет 1: Стили и общая согласованность Совет 1.1: Линтеры и отступы Совет 1.2: Проверка имен, абстраций, разбиение на модули, декомпозиция Совет 2: Погружайтесь в логику работы решения Совет 3: Присматривайтесь к деталям Совет 4: Уважайте чужие решения Совет 4.]]></description>
-</item>
-</channel>
-</rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Code-Review - Tag - kirya522 dev blog</title><link>https://kirya522.tech/tags/code-review/</link><description>Code-Review - Tag - kirya522 dev blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>kirya522@gmail.com (Kirill Grishchuk)</managingEditor><webMaster>kirya522@gmail.com (Kirill Grishchuk)</webMaster><lastBuildDate>Wed, 28 Sep 2022 11:01:21 +0400</lastBuildDate><atom:link href="https://kirya522.tech/tags/code-review/" rel="self" type="application/rss+xml"/><item><title>Как проводить code review. 5 советов</title><link>https://kirya522.tech/posts/code-review/</link><pubDate>Wed, 28 Sep 2022 11:01:21 +0400</pubDate><author>Kirill Grishchuk</author><guid>https://kirya522.tech/posts/code-review/</guid><description>Видео на канале Темы из видео Какие проблемы возникают без ревью Ревью помогает командам разрабатывать быстрее Смена парадигмы понимания Предвидеть потенциальные проблемы Код ревью на практике Зачем код ревью разработчику 5 универсальных советов Совет 1: Стили и общая согласованность Совет 1.1: Линтеры и отступы Совет 1.2: Проверка имен, абстраций, разбиение на модули, декомпозиция Совет 2: Погружайтесь в логику работы решения Совет 3: Присматривайтесь к деталям Совет 4: Уважайте чужие решения Совет 4.</description></item></channel></rss>

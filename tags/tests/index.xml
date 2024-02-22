@@ -1,36 +1,5 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Tests - Tag - kirya522 dev blog</title>
-        <link>https://kirya522.tech/tags/tests/</link>
-        <description>Tests - Tag - kirya522 dev blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>kirya522@gmail.com (Kirill Grishchuk)</managingEditor>
-            <webMaster>kirya522@gmail.com (Kirill Grishchuk)</webMaster><lastBuildDate>Thu, 22 Feb 2024 13:00:00 &#43;0400</lastBuildDate><atom:link href="https://kirya522.tech/tags/tests/" rel="self" type="application/rss+xml" /><item>
-    <title>Профилирование сценария по трейсам с прода</title>
-    <link>https://kirya522.tech/posts/profiling-by-traces-on-prod/</link>
-    <pubDate>Thu, 22 Feb 2024 13:00:00 &#43;0400</pubDate>
-    <author>Kirill Grishchuk</author>
-    <guid>https://kirya522.tech/posts/profiling-by-traces-on-prod/</guid>
-    <description><![CDATA[Note Очень часто тормозит лишь только часть приложения, при этом тормозит только в prod окружении. Проблема На локальных машинах профилирование не имеет смысла, результаты оказываются совершенно другими, запросы к локальной базе могут тормозить, а на prod занимать 5мс и наоборот.
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Tests - Tag - kirya522 dev blog</title><link>https://kirya522.tech/tags/tests/</link><description>Tests - Tag - kirya522 dev blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>kirya522@gmail.com (Kirill Grishchuk)</managingEditor><webMaster>kirya522@gmail.com (Kirill Grishchuk)</webMaster><lastBuildDate>Thu, 22 Feb 2024 13:00:00 +0400</lastBuildDate><atom:link href="https://kirya522.tech/tags/tests/" rel="self" type="application/rss+xml"/><item><title>Профилирование сценария по трейсам с прода</title><link>https://kirya522.tech/posts/profiling-by-traces-on-prod/</link><pubDate>Thu, 22 Feb 2024 13:00:00 +0400</pubDate><author>Kirill Grishchuk</author><guid>https://kirya522.tech/posts/profiling-by-traces-on-prod/</guid><description>Note Очень часто тормозит лишь только часть приложения, при этом тормозит только в prod окружении. Проблема На локальных машинах профилирование не имеет смысла, результаты оказываются совершенно другими, запросы к локальной базе могут тормозить, а на prod занимать 5мс и наоборот.
 Решение Для достоверного результата необходимо проводить тест на выделенном окружении с отдельной prod-like инфраструктурой. Требуется большая подготовка окружения и нагрузки в целом для правильных выводов.
-Альтернативное решение Часто на prod уже собираются трейсы, достаточно добавить их на ключевые части сценария, а дальше по каждой части собранных данных строить перцентиль выполнения этапа.]]></description>
-</item>
-<item>
-    <title>Способ тестирования изменений сервиса через shadow-трафик</title>
-    <link>https://kirya522.tech/posts/critical-changes-in-highload-service/</link>
-    <pubDate>Thu, 21 Sep 2023 13:00:00 &#43;0400</pubDate>
-    <author>Kirill Grishchuk</author>
-    <guid>https://kirya522.tech/posts/critical-changes-in-highload-service/</guid>
-    <description><![CDATA[Note Иногда канареечных релизов недостаточно для обеспечения полностью безопасного релиза. Проблема Пример из реальной жизни - я работаю над одним из высоко нагруженных компонентов системы, который обрабатывает 1,5-2 млн запросов в минуту (33 k RPS).
-Наш сервис уже стал сложным для внесения изменений, а внутренний механизм устарел и не соответствует новым требованиям бизнеса. Он также уже почти не может быть ускорен и имеет технические проблемы. Мы спланировали и разработали новый механизм работы и обработки данных (изменено около 40% кодовой базы), который нужно интегрировать и перенаправить на него трафик.]]></description>
-</item>
-<item>
-    <title>Правила хорошего UNIT-теста</title>
-    <link>https://kirya522.tech/posts/unit-tests/</link>
-    <pubDate>Sat, 09 Apr 2022 15:59:00 &#43;0400</pubDate>
-    <author>Kirill Grishchuk</author>
-    <guid>https://kirya522.tech/posts/unit-tests/</guid>
-    <description><![CDATA[ Note Весь исходный код доступен на github Видео с подробным разбором Содержание:
-Как начинается unit тестирование Тестирование Repository Сколько методов столько и тестов Тесты не должны зависеть друг от друга Не инициализировать лишние зависимости Как назвать тест Содержание теста, модель AAA Когда использовать моки Самые типичные Unit тесты Тестирование Service Тестирование с моками зависимостей Полезные аннотации Mockito Настройка моков зависимостей Проверка вызовов через verify Как проверять void метод Тестирование Controller Тест с большим количеством моков Разница Unit и Integration тестов Кратко о SpringBootTest Зона ответственности Unit тестов Покрытие кода тестами Как читать отчет о покрытии Как происходит ревью тестов ]]></description>
-</item>
-</channel>
-</rss>
+Альтернативное решение Часто на prod уже собираются трейсы, достаточно добавить их на ключевые части сценария, а дальше по каждой части собранных данных строить перцентиль выполнения этапа.</description></item><item><title>Способ тестирования изменений сервиса через shadow-трафик</title><link>https://kirya522.tech/posts/critical-changes-in-highload-service/</link><pubDate>Thu, 21 Sep 2023 13:00:00 +0400</pubDate><author>Kirill Grishchuk</author><guid>https://kirya522.tech/posts/critical-changes-in-highload-service/</guid><description>Note Иногда канареечных релизов недостаточно для обеспечения полностью безопасного релиза. Проблема Пример из реальной жизни - я работаю над одним из высоко нагруженных компонентов системы, который обрабатывает 1,5-2 млн запросов в минуту (33 k RPS).
+Наш сервис уже стал сложным для внесения изменений, а внутренний механизм устарел и не соответствует новым требованиям бизнеса. Он также уже почти не может быть ускорен и имеет технические проблемы. Мы спланировали и разработали новый механизм работы и обработки данных (изменено около 40% кодовой базы), который нужно интегрировать и перенаправить на него трафик.</description></item><item><title>Правила хорошего UNIT-теста</title><link>https://kirya522.tech/posts/unit-tests/</link><pubDate>Sat, 09 Apr 2022 15:59:00 +0400</pubDate><author>Kirill Grishchuk</author><guid>https://kirya522.tech/posts/unit-tests/</guid><description> Note Весь исходный код доступен на github Видео с подробным разбором Содержание:
+Как начинается unit тестирование Тестирование Repository Сколько методов столько и тестов Тесты не должны зависеть друг от друга Не инициализировать лишние зависимости Как назвать тест Содержание теста, модель AAA Когда использовать моки Самые типичные Unit тесты Тестирование Service Тестирование с моками зависимостей Полезные аннотации Mockito Настройка моков зависимостей Проверка вызовов через verify Как проверять void метод Тестирование Controller Тест с большим количеством моков Разница Unit и Integration тестов Кратко о SpringBootTest Зона ответственности Unit тестов Покрытие кода тестами Как читать отчет о покрытии Как происходит ревью тестов</description></item></channel></rss>
