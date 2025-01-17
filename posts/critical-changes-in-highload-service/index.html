@@ -61,46 +61,46 @@
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=kn>import</span> <span class=s>&#34;math/rand&#34;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=kd>const</span> <span class=p>(</span>
-</span></span><span class=line><span class=cl>  <span class=c1>// процент трафика на котором запустились 
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>trafficPercent</span> <span class=p>=</span> <span class=mi>1</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// процент трафика на котором запустились </span>
+</span></span><span class=line><span class=cl>	<span class=nx>trafficPercent</span> <span class=p>=</span> <span class=mi>1</span>
 </span></span><span class=line><span class=cl><span class=p>)</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=kd>func</span> <span class=p>(</span><span class=nx>h</span> <span class=o>*</span><span class=nx>handler</span><span class=p>)</span> <span class=nf>handle</span><span class=p>(</span><span class=nx>req</span> <span class=nx>Request</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>	<span class=c1>// получаем первый ответ
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>resp1</span> <span class=o>:=</span> <span class=nx>h</span><span class=p>.</span><span class=nf>v1</span><span class=p>(</span><span class=nx>req</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// получаем первый ответ</span>
+</span></span><span class=line><span class=cl>	<span class=nx>resp1</span> <span class=o>:=</span> <span class=nx>h</span><span class=p>.</span><span class=nf>v1</span><span class=p>(</span><span class=nx>req</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=c1>// простейший способ отправить часть трафика, если число попадает в интервал, то отправляем
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=c1>// дополнительно можно сделать реальный переключатель, чтобы процент увеличить/уменьшить
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=k>if</span> <span class=nx>rand</span><span class=p>.</span><span class=nf>Intn</span><span class=p>(</span><span class=mi>100</span><span class=p>)</span> <span class=p>&lt;</span> <span class=nx>trafficPercent</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// простейший способ отправить часть трафика, если число попадает в интервал, то отправляем</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// дополнительно можно сделать реальный переключатель, чтобы процент увеличить/уменьшить</span>
+</span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=nx>rand</span><span class=p>.</span><span class=nf>Intn</span><span class=p>(</span><span class=mi>100</span><span class=p>)</span> <span class=p>&lt;</span> <span class=nx>trafficPercent</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>		<span class=k>go</span> <span class=kd>func</span><span class=p>(</span><span class=nx>req</span> <span class=nx>Request</span><span class=p>,</span> <span class=nx>resp1</span> <span class=nx>Response</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>			<span class=c1>// получаем второй ответ
-</span></span></span><span class=line><span class=cl><span class=c1></span>			<span class=nx>resp2</span> <span class=o>:=</span> <span class=nx>h</span><span class=p>.</span><span class=nf>v2</span><span class=p>(</span><span class=nx>req</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>			<span class=c1>// запустить сравнение
-</span></span></span><span class=line><span class=cl><span class=c1></span>			<span class=nx>h</span><span class=p>.</span><span class=nf>cmp</span><span class=p>(</span><span class=nx>req</span><span class=p>,</span> <span class=nx>resp1</span><span class=p>,</span> <span class=nx>resp2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>			<span class=c1>// получаем второй ответ</span>
+</span></span><span class=line><span class=cl>			<span class=nx>resp2</span> <span class=o>:=</span> <span class=nx>h</span><span class=p>.</span><span class=nf>v2</span><span class=p>(</span><span class=nx>req</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>			<span class=c1>// запустить сравнение</span>
+</span></span><span class=line><span class=cl>			<span class=nx>h</span><span class=p>.</span><span class=nf>cmp</span><span class=p>(</span><span class=nx>req</span><span class=p>,</span> <span class=nx>resp1</span><span class=p>,</span> <span class=nx>resp2</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>		<span class=p>}(</span><span class=nx>req</span><span class=p>,</span> <span class=nx>resp1</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>	<span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>	<span class=k>return</span> <span class=nx>resp1</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=c1>// сравнение ответов
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>func</span> <span class=p>(</span><span class=nx>h</span> <span class=o>*</span><span class=nx>handler</span><span class=p>)</span> <span class=nf>cmp</span><span class=p>(</span><span class=nx>req</span> <span class=nx>Request</span><span class=p>,</span> <span class=nx>resp1</span><span class=p>,</span> <span class=nx>resp2</span> <span class=nx>Response</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>	<span class=c1>// получаем дифф и поля которые различаются
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=c1>// поля возвращаем списком
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nx>diff</span><span class=p>,</span> <span class=nx>filds</span> <span class=o>:=</span> <span class=nx>lib</span><span class=p>.</span><span class=nf>compare</span><span class=p>(</span><span class=nx>resp1</span><span class=p>,</span> <span class=nx>resp2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c1>// сравнение ответов</span>
+</span></span><span class=line><span class=cl><span class=kd>func</span> <span class=p>(</span><span class=nx>h</span> <span class=o>*</span><span class=nx>handler</span><span class=p>)</span> <span class=nf>cmp</span><span class=p>(</span><span class=nx>req</span> <span class=nx>Request</span><span class=p>,</span> <span class=nx>resp1</span><span class=p>,</span> <span class=nx>resp2</span> <span class=nx>Response</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// получаем дифф и поля которые различаются</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// поля возвращаем списком</span>
+</span></span><span class=line><span class=cl>	<span class=nx>diff</span><span class=p>,</span> <span class=nx>filds</span> <span class=o>:=</span> <span class=nx>lib</span><span class=p>.</span><span class=nf>compare</span><span class=p>(</span><span class=nx>resp1</span><span class=p>,</span> <span class=nx>resp2</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=c1>// есть различия
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=c1>// логируем запрос + разлчия, чтобы повторить
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=c1>// записываем метрику по полям
-</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=k>if</span> <span class=nx>diff</span> <span class=o>!=</span> <span class=nx>null</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// есть различия</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// логируем запрос + разлчия, чтобы повторить</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// записываем метрику по полям</span>
+</span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=nx>diff</span> <span class=o>!=</span> <span class=nx>null</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>		<span class=nx>h</span><span class=p>.</span><span class=nf>log</span><span class=p>(</span><span class=nx>req</span><span class=p>,</span> <span class=nx>diff</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>		<span class=nx>h</span><span class=p>.</span><span class=nx>metric</span><span class=p>.</span><span class=nx>Diff</span><span class=p>.</span><span class=nf>Inc</span><span class=p>()</span>
 </span></span><span class=line><span class=cl>		<span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>field</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>fields</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>			<span class=nx>h</span><span class=p>.</span><span class=nx>metric</span><span class=p>.</span><span class=nf>Diff</span><span class=p>(</span><span class=nx>field</span><span class=p>).</span><span class=nf>Inc</span><span class=p>()</span>
 </span></span><span class=line><span class=cl>		<span class=p>}</span>
 </span></span><span class=line><span class=cl>	<span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>		<span class=c1>// ответ сопадает
-</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=nx>h</span><span class=p>.</span><span class=nx>metric</span><span class=p>.</span><span class=nx>Same</span><span class=p>.</span><span class=nf>Inc</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>		<span class=c1>// ответ сопадает</span>
+</span></span><span class=line><span class=cl>		<span class=nx>h</span><span class=p>.</span><span class=nx>metric</span><span class=p>.</span><span class=nx>Same</span><span class=p>.</span><span class=nf>Inc</span><span class=p>()</span>
 </span></span><span class=line><span class=cl>	<span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></td></tr></table></div></div></p><h2 id=презентация>Презентация</h2><script type=text/javascript src=/js/pdf-js/build/pdf.js></script><style>#embed-pdf-container{position:relative;width:100%;height:auto;min-height:20vh}.pdf-canvas{border:1px solid #000;direction:ltr;width:100%;height:auto;display:none}#the-canvas{border:1px solid #000;direction:ltr;width:100%;height:auto;display:none}.pdf-loadingWrapper{display:none;justify-content:center;align-items:center;width:100%;height:350px}.pdf-loading{display:inline-block;width:50px;height:50px;border:3px solid #d2d0d0;border-radius:50%;border-top-color:#383838;animation:spin 1s ease-in-out infinite;-webkit-animation:spin 1s ease-in-out infinite}#overlayText{word-wrap:break-word;display:grid;justify-content:end}#overlayText a{position:relative;top:10px;right:4px;color:#000;margin:auto;background-color:#eee;padding:.3em 1em;border:solid 2px;border-radius:12px;border-color:#00000030;text-decoration:none}#overlayText svg{height:clamp(1em,2vw,1.4em);width:clamp(1em,2vw,1.4em)}@keyframes spin{to{-webkit-transform:rotate(360deg)}}@-webkit-keyframes spin{to{-webkit-transform:rotate(360deg)}}</style><div class=embed-pdf-container id=embed-pdf-container-409c3468><div class=pdf-loadingWrapper id=pdf-loadingWrapper-409c3468><div class=pdf-loading id=pdf-loading-409c3468></div></div><div id=overlayText><a href=./shadow.pdf aria-label=Download download><svg aria-hidden="true" viewBox="0 0 18 18"><path d="M9 13c.3.0.5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z"/></svg></a></div><canvas class=pdf-canvas id=pdf-canvas-409c3468></canvas></div><div class=pdf-paginator id=pdf-paginator-409c3468><button id=pdf-prev-409c3468>Previous</button>
 <button id=pdf-next-409c3468>Next</button> &nbsp; &nbsp;
